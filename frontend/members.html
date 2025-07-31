@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="icon"
+      href="https://zynta.com/wp-content/uploads/2025/06/icon.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://zynta.com/wp-content/uploads/2025/06/icon.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://zynta.com/wp-content/uploads/2025/06/icon.png"
+    />
+    <title>Members - Zynta Referral System</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <a href="index.html">
+          <img src="./assets/logo.svg" alt="Zynta Logo" />
+        </a>
+        <nav class="nav">
+          <a href="register.html" class="nav-link">Register</a>
+          <a href="members.html" class="nav-link active">Members</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h2 class="page-title">Network Members</h2>
+        <p class="page-description">
+          View all members of the Zynta referral network, sorted by their earned
+          points.
+        </p>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" id="totalUsers">0</div>
+          <div class="stat-label">Total Members</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="totalPoints">0</div>
+          <div class="stat-label">Points Earned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="totalReferrals">0</div>
+          <div class="stat-label">Active Referrals</div>
+        </div>
+      </div>
+
+      <!-- Members List -->
+      <div class="members-container">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">All Members</h3>
+            <button id="refreshBtn" class="btn-secondary">Refresh</button>
+          </div>
+
+          <div id="usersContainer" class="users-container">
+            <div class="loading">
+              <div class="loading-spinner"></div>
+              Loading members...
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Zynta. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/members.js"></script>
+  </body>
+</html>
