@@ -22,6 +22,20 @@ class UserStore {
         'John Doe',
         'john@example.com',
         this.generateReferralCode(),
+        20
+      ),
+      new User(
+        2,
+        'Jane Smith',
+        'jane@example.com',
+        this.generateReferralCode(),
+        0
+      ),
+      new User(
+        3,
+        'Alice Johnson',
+        'alice@example.com',
+        this.generateReferralCode(),
         0
       ),
     ]
